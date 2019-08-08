@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-From terminal, run the command to generate predictions, classifications, imagens related to features analysis:
+From terminal, run the command to generate predictions, classifications, images related to features analysis:
 
 ```bash
 python code.py
