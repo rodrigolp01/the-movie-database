@@ -17,6 +17,15 @@ From terminal, run the command to generate predictions, classifications, images 
 ```bash
 python code.py
 ```
+Run this other commands to recommend by movie genre and by movie title, respectively:
+
+```bash
+python content_recommender.py
+```
+
+```bash
+python similarity_content_recommender.py
+```
 
 ## Usage with DockerFile
 
@@ -36,4 +45,15 @@ And copy a result image(to visualize in the host) with this command:
 
 ```bash
 sudo docker cp <container-id>:/<image> .
+```
+The above command will only work if the container is active.
+
+To call the other scripts you can activate the container and access it
+
+```bash
+sudo docker start <container-id>
+```
+
+```bash
+sudo docker run -it the-movie /bin/bash
 ```
